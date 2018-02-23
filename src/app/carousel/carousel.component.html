@@ -1,0 +1,13 @@
+<!--Carousel Wrapper-->
+<mdb-carousel id="slide_container" [isControls]="true" class="carousel slide carousel-slideInLeft" [type]="'carousel-thumbnails'" [animation]="'fade'">
+    <!--First slide-->
+    <mdb-slide *ngFor="let slide of images">
+        <img class="d-block w-100" src="{{slide.url}}">
+        <h1 class="animated bounceInUp" id="slide_title"><span>{{slide.title}}</span></h1>
+        <h2 id="slide_message" class="animated bounceInRight"><span>{{slide.message}}</span></h2>
+        <button id="slide_link" routerLink="{{slide.link}}" type="button" class=" animated bounceInLeft btn btn-outline-success" mdbRippleRadius>GET STARTED</button>
+    </mdb-slide>
+</mdb-carousel>
+<!--/.Carousel Wrapper-->
+
+<!--[ngClass]="{ 'hide': !slide.selected }"-->

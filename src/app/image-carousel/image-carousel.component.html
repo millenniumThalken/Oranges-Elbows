@@ -1,0 +1,8 @@
+<div class="slide-content">
+    <div class="my_slides" *ngFor="let slide of images">
+        <img class="slide_image" [ngClass]="{ 'hide': !slide.selected }" src="{{slide.url}}">
+        <h2 class="slide_title" [ngClass]="{ 'hide': !slide.selected }"><span>{{slide.title}}</span></h2>
+    </div>
+</div>
+<button (click)="previous()">previous</button>
+<button (click)="next()">next</button>

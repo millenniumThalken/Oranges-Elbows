@@ -1,0 +1,113 @@
+$green: #76FF03;
+$grey: #AAAAAA;
+$orange: #FF9800;
+.social-media-footer {
+    display: grid;
+    grid-column: auto auto auto auto;
+    background-color: #60636a;
+    grid-row-start: 3;
+    grid-column: 1/4;
+}
+
+p {
+    color: $grey;
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $orange;
+}
+
+#footer-text {
+    font-size: 1.5em;
+    grid-column: 2/3;
+    text-align: center;
+    margin: 0.5em;
+    font-style: italic;
+}
+
+#footer-links {
+    font-size: 1.5em;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0em;
+    font-style: italic;
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+$timing: 265ms;
+$green: #76FF03;
+$dark-green: #8BC34A;
+$orange: #FF9800;
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0em;
+    grid-column: 2/3;
+    li {
+        display: inline-block;
+        margin-left: 0.08em;
+        position: relative;
+        font-size: 1.2em;
+        max-height: 31.99px
+    }
+    i {
+        color: #fff;
+        position: absolute;
+        top: 0.4em;
+        left: 0.35em;
+        transition: all $timing ease-out;
+    }
+    a {
+        display: inline-block;
+        &:before {
+            @include transformScale();
+            content: "";
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 100%;
+            display: block;
+            transition: all $timing ease-out;
+        }
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        &:hover i {
+            @include transformScale(2.2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+    a.social-square {
+        &:before {
+            background: linear-gradient(45deg, $green, $dark-green);
+            border-radius: 10%;
+        }
+        &:hover:before {
+            transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            -webkit-transform: scale(-180deg);
+            border-radius: 100%;
+        }
+        &:hover i {
+            @include transformScale(1.6);
+            color: $orange;
+            transform: scale(1.6);
+            -webkit-text-fill-color: $orange;
+        }
+    }
+}

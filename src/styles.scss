@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+$green: #76FF03;
+$grey: #AAAAAA;
+$orange: #FF9800;
+@import './custom-theme';
+html,
+body {
+    min-height: 100vh;
+    width: auto;
+    background-color: #F1F8E9;
+}
+
+.link {
+    color: $green;
+    cursor: pointer;
+}
+
+.layout {
+    display: grid;
+    min-height: 100vh;
+    width: auto;
+    grid-template-columns: auto auto auto auto;
+}
+
+app-social-media-header {
+    background-color: #F1F8E9;
+    grid-column: 1/5;
+    height: 2em;
+}
+
+app-header {
+    background-color: white;
+    grid-column: 1/5;
+}
+
+app-navbar {
+    grid-column: 1/5;
+    grid-row-start: 3;
+}
+
+.main-content {
+    grid-column: 1/5; // grid-row-start: 3;
+    // grid-row-end: 4;
+    min-height: 50em; //setting this to now for the moment to get the layout correct
+}
+
+app-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: repeat(3, 1fr);
+    background-color: #65686f;
+    grid-row-start: 4;
+    grid-row-start: 5;
+    grid-column: 1/5;
+    max-height: 12em;
+}
+
+.carousel-indicators li img {
+    display: none;
+}

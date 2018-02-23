@@ -1,0 +1,70 @@
+mdb-slide img {
+    max-height: 700px;
+    object-fit: cover;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    width: 7em;
+    height: 7em;
+}
+
+// img .img-fluid {
+//     display: none;
+// } this is an attempt to remove those little thumbnail previews at the bottom of the slider, still needs to be done.
+#slide_title {
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 60%;
+    min-height: 75%;
+    text-align: center;
+}
+
+#slide_title span {
+    color: white;
+    font: bold Helvetica, Sans-Serif;
+    font-size: 2em;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-bottom: 50%;
+    border-radius: 10px;
+}
+
+#slide_message {
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: 90%;
+    min-height: 8%;
+    text-align: center;
+}
+
+#slide_message span {
+    color: white;
+    font: bold Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#slide_link {
+    position: absolute;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 10%;
+    min-width: 10%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline-success {
+    font-size: medium;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+$green: #76FF03;
+button {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    color: white;
+    width: auto;
+}
+
+button:hover {
+    background-color: $green;
+    color: white;
+}
+
+.mat-toolbar-row {
+    max-height: 2em;
+    padding: 0 0px;
+}
+
+.mat-toolbar-multiple-rows {
+    max-height: 2em;
+    min-height: 0px;
+}
