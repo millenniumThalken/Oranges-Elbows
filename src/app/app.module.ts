@@ -15,6 +15,7 @@ import { SocialMediaHeaderComponent } from './social-media-header/social-media-h
 import { FooterComponent } from './footer/footer.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { OurServicesComponent } from './our-services/our-services.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CarouselComponent } from './carousel/carousel.component';
         SocialMediaHeaderComponent,
         FooterComponent,
         ImageCarouselComponent,
-        CarouselComponent
+        CarouselComponent,
+        OurServicesComponent
     ],
     imports: [
         BrowserModule,

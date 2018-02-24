@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.top-text {
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.top-text h1 {
+    font-family: 'Lobster', cursive;
+}
+
+.top-text p {
+    font-size: 2em;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 6em auto auto auto;
+    font-size: 2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+li {
+    list-style: none;
+}
+
+#kitchen {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.kitchen_text {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.bathroom-title {
+    margin-top: 6%;
+}
