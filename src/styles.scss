@@ -34,15 +34,14 @@ app-header {
     grid-column: 1/5;
 }
 
-app-navbar {
-    grid-column: 1/5;
-    grid-row-start: 3;
-}
-
+// app-navbar {
+//     grid-column: 1/5;
+//     grid-row-start: 3;
+// }
 .main-content {
     grid-column: 1/5; // grid-row-start: 3;
     // grid-row-end: 4;
-    min-height: 50em; //setting this to now for the moment to get the layout correct
+    //min-height: 50em; setting this to now for the moment to get the layout correct
 }
 
 app-footer {
