@@ -1,0 +1,19 @@
+$green: #76FF03;
+$grey: #AAAAAA;
+$orange: #FF9800;
+form {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.btn-unique {
+    background-color: $orange;
+}
+
+.btn-unique:hover {
+    background-color: $green !important;
+}
+
+.btn {
+    font-size: 2rem;
+}

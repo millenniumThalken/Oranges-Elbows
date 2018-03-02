@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+$green: #76FF03;
+$orange: #FF9800;
 .header-section {
     height: 7em;
     width: auto;
+    background-color: $orange;
 }
 
 .header-logo {
@@ -17,12 +21,9 @@
     width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Lobster');
-$green: #76FF03;
-$orange: #FF9800;
 button {
     font-family: 'Lobster', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     color: white;
     width: auto;
 }
