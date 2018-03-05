@@ -17,14 +17,16 @@ exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWri
     }
 
     const val = snapshot.val();
+    const companyEmail = "orangesandelbows@gmail.com";
 
     const mailOptions = {
-        to: val.email,
-        subject: 'Your message has been sent. Thank you.',
-        text: `Your message content. \n
-          Subject: ${val.subject} \n
-          Sender's Name: ${val.name} \n
-          Content: ${val.message}`
+        to: companyEmail,
+        subject: 'New Cleaning Request.',
+        text: `New Client Request for Cleaning. \n
+            Sender's Name: ${val.name} \n
+            Senders Email: ${val.email} \n
+            Subject: ${val.subject} \n
+            Content: ${val.message}`
     };
     return mailTransport.sendMail(mailOptions).then(() => {
         return console.log('Mail sent'); //The log will be shown in Firebase.

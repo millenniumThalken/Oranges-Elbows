@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+$green: #76FF03;
+$grey: #AAAAAA;
+$orange: #FF9800;
 .top-text {
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 12%;
 }
 
 .top-text h1 {
@@ -34,8 +37,29 @@ li {
 .kitchen_text {
     grid-column: 2;
     grid-row: 2;
+    margin-left: inherit;
 }
 
 .bathroom-title {
     margin-top: 6%;
+}
+
+#green-clean {
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: inherit;
+    margin-top: inherit;
+}
+
+.green-clean-text {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+a {
+    color: $green;
+}
+
+a:hover {
+    color: $orange;
 }

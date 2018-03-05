@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
+import { MatSnackBar } from '@angular/material'
 
 @Component({
     selector: 'app-contact-form',
@@ -9,7 +10,7 @@ import { AngularFireDatabase } from 'angularfire2/database';
 })
 export class ContactFormComponent implements OnInit {
     form: FormGroup;
-    constructor(private fb: FormBuilder, private db: AngularFireDatabase) { }
+    constructor(private fb: FormBuilder, private db: AngularFireDatabase, private snackbar: MatSnackBar) { }
 
 
 
@@ -41,6 +42,14 @@ export class ContactFormComponent implements OnInit {
 
         this.db.list('/messages').push(formRequest);
         this.form.reset();
+    }
+
+    message: string = "Your Message Was Sent Successfully";
+
+    showSnackbar(snackMessage: string) {
+        this.snackbar.open(snackMessage = this.message, "Sent", {
+            duration: 5000,
+        });
     }
 
 

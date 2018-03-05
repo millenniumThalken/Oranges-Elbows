@@ -27,7 +27,7 @@
     </div>
 
     <div class="text-center">
-        <button class="btn btn-unique waves-light" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+        <button class="btn btn-unique waves-light" (click)="showSnackbar()" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
     </div>
 
 </form>
