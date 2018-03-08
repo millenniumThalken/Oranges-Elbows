@@ -1,13 +1,16 @@
 <!--Carousel Wrapper-->
+<!--using the Bootstrap4/Material Design UI for some of the components, this allows me to use some of the built in classes
+to achive the look and style that I want in a image carousel-->
 <mdb-carousel id="slide_container" [isControls]="true" class="carousel slide carousel-slideInLeft" [type]="'carousel-thumbnails'" [animation]="'fade'">
-    <!--First slide-->
+    <!--I have an 'images' Object that contains references to many different images, using hte *ngFor syntax to loop through my Object-->
     <mdb-slide *ngFor="let slide of images">
+        <!--I am binding the image url property from my image Object to an img tag attribute-->
         <img class="d-block w-100" src="{{slide.url}}">
+        <!--Binding some text information for each image and adding animation transitions-->
         <h1 class="animated bounceInUp" id="slide_title"><span>{{slide.title}}</span></h1>
         <h2 id="slide_message" class="animated bounceInRight"><span>{{slide.message}}</span></h2>
+        <!--Each slide has a button on it, here I am binding the link property from the image Object -->
         <button id="slide_link" routerLink="{{slide.link}}" type="button" class=" animated bounceInLeft btn btn-outline-success" mdbRippleRadius>GET STARTED</button>
     </mdb-slide>
 </mdb-carousel>
 <!--/.Carousel Wrapper-->
-
-<!--[ngClass]="{ 'hide': !slide.selected }"-->

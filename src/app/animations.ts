@@ -1,3 +1,4 @@
+//I don't actually think I am using this for my image carousel, but I am keeping it in the project as reference
 import { animate, animation, style } from '@angular/animations';
 
 export var slideAnimation = animation([

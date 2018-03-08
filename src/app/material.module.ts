@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+//I am using the Material Design UI to help get the app up and running. Material Design requires you to import the
+//specific modules and component you want to use. I want access to all of them so I created this custom module and
+//imported everything and then exported the module into my app.module.ts file.
 
 import {
     MatButtonModule,

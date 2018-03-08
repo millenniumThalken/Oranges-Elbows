@@ -1,11 +1,12 @@
+<!--This is the actual layout of the entire website. I have split up the structure and really using the components
+to get the look of the website. I am using CSS Grid to achive the layout that I desire-->
 <div class=layout>
     <app-social-media-header></app-social-media-header>
     <app-header></app-header>
-    <!--<app-navbar></app-navbar>-->
+    <!--Everthing except inside main-content is static and doesn't change, the router-outlet is where the other page
+    components will load-->
     <div class="main-content">
         <router-outlet></router-outlet>
-
     </div>
     <app-footer></app-footer>
-
 </div>

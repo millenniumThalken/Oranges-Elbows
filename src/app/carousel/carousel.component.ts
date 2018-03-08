@@ -10,6 +10,7 @@ export class CarouselComponent implements OnInit {
 
     constructor() { }
 
+    //here I have created my own Image model and am using it here to populate an Object of type Image
     public images: Image[] = [
         { "title": "Detailed Services", "message": "Eco-friendly Cleaning That Keeps the Environment and you Healthy", "link": "/our-services", "url": "/assets/images/Lavender.jpg", "selected": false },
         { "title": "A Commitment to Being Green ", "message": "Oranges&Elbows is 100% committed to your health and the environment, check out our testimonials", "link": "/#", "url": "/assets/images/kitchen_one.jpg", "selected": false },

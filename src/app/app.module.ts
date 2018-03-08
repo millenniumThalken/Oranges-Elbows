@@ -24,6 +24,8 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { environment } from '../environments/environment';
+import { GgmapsComponent } from './ggmaps/ggmaps.component';
+import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { environment } from '../environments/environment';
         ImageCarouselComponent,
         CarouselComponent,
         OurServicesComponent,
-        ContactFormComponent
+        ContactFormComponent,
+        GgmapsComponent,
+        AreasWeServiceComponent
     ],
     imports: [
         BrowserModule,

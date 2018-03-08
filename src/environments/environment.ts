@@ -3,6 +3,7 @@
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
+//setting environment variables for easy access to the Firebase Database, these setting are found in your firebase console
 export const environment = {
     production: false,
     firebase: {

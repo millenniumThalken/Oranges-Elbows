@@ -1,3 +1,4 @@
+<!--Accessing the FormGroup from the component and connecting the onSubmit() method to the form-->
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
     <p class="h2 text-center mb-4">Contact Us</p>
@@ -26,6 +27,8 @@
         <label for="form8">Your message</label>
     </div>
 
+    <!--The form can only be submitted when the required fields are filled, the showSnackbar() method is triggered
+    when the button is successfully pushed-->
     <div class="text-center">
         <button class="btn btn-unique waves-light" (click)="showSnackbar()" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
     </div>

@@ -1,3 +1,5 @@
+//creating a custom Material theme to match the colors I want for the website, this way I can utilize Material
+//keywords such as primary and accent to apply theme colors to components
 @import '../node_modules/@angular/material/theming';
 @include mat-core();
 $custom-theme-primary: mat-palette($mat-orange);
