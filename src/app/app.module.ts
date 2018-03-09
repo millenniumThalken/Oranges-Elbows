@@ -8,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { AgmCoreModule } from '@agm/core';
 
 
 
@@ -52,7 +53,10 @@ import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.com
         AngularFireDatabaseModule,
         ReactiveFormsModule,
         FormsModule,
-        MDBBootstrapModule.forRoot()
+        MDBBootstrapModule.forRoot(),
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAw_G4z70opYSIbFHwe1ftzsW8tiybhBCc'
+        })
 
 
     ],
