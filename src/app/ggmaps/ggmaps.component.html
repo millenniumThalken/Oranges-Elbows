@@ -1,8 +1,6 @@
 <h1>{{title}}</h1>
 
-<agm-map [latitude]="iowa_city_lat" [longitude]="iowa_city_long" [zoom]="10">
-    <agm-marker [latitude]="iowa_city_lat" [longitude]="iowa_city_long"></agm-marker>
-    <agm-marker [latitude]="west_branch_lat" [longitude]="west_branch_long"></agm-marker>
-    <agm-marker [latitude]="coralville_lat" [longitude]="coralville_long"></agm-marker>
-    <agm-marker [latitude]="riverside_lat" [longitude]="riverside_long"></agm-marker>
+<agm-map [latitude]="start_lat" [longitude]="start_long" [zoom]="10">
+    <agm-marker *ngFor="let place of locations" [latitude]="place.lat" [longitude]="place.long"></agm-marker>
 </agm-map>
+<h3><span class="locations_names" *ngFor="let names of locations">{{names.title}}</span></h3>
