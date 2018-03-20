@@ -1,0 +1,76 @@
+/* Flex styles -------------------------------------------------*/
+
+@media (min-width: 700px) {
+    .leading {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Grid styles -------------------------------------------------*/
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Generic styles ----------------------------------------------*/
+
+main {
+    margin-top: 2%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.leading {
+    height: 35em; //height: 200px;
+    margin-bottom: 30px;
+    margin-left: 5em;
+    margin-right: 5em;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.cards {
+    max-width: 960px;
+    margin: 0 auto 30px;
+}
+
+article.cards-article {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+.article-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.article-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: rgba(20, 19, 19, 0.616);
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    transition: height .4s ease-in-out;
+    -webkit-transition: height .4s ease-in-out;
+    -moz-transition: height .4s ease-in-out;
+}
+
+article.cards-article:hover {
+    .article-title {
+        height: 100px;
+    }
+}

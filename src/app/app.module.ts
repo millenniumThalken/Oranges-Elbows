@@ -27,6 +27,9 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { environment } from '../environments/environment';
 import { GgmapsComponent } from './ggmaps/ggmaps.component';
 import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
+import { MeetTheCrewComponent } from './meet-the-crew/meet-the-crew.component';
+import { ModalCrewComponent } from './modal-crew/modal-crew.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -42,7 +45,10 @@ import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.com
         OurServicesComponent,
         ContactFormComponent,
         GgmapsComponent,
-        AreasWeServiceComponent
+        AreasWeServiceComponent,
+        MeetTheCrewComponent,
+        ModalCrewComponent,
+        TestimonialsComponent
     ],
     imports: [
         BrowserModule,

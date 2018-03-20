@@ -4,6 +4,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { ContactFormComponent } from './contact-form/contact-form.component'
 import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
+import { MeetTheCrewComponent } from './meet-the-crew/meet-the-crew.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
     {
@@ -27,7 +29,16 @@ const routes: Routes = [
     {
         path: 'contact',
         component: ContactFormComponent
+    },
+    {
+        path: 'meet-the-crew',
+        component: MeetTheCrewComponent
+    },
+    {
+        path: 'testimonials',
+        component: TestimonialsComponent
     }
+
 ];
 
 @NgModule({
