@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Crew } from './crew.model';
+import { ModalService, Modal } from 'ng-bootstrap-modal';
+
+
+
 
 @Component({
     selector: 'app-meet-the-crew',
     templateUrl: './meet-the-crew.component.html',
-    styleUrls: ['./meet-the-crew.component.scss']
+    styleUrls: ['./meet-the-crew.component.scss'],
+
 })
 export class MeetTheCrewComponent implements OnInit {
 
@@ -19,9 +24,16 @@ export class MeetTheCrewComponent implements OnInit {
         { "name": "Seanna Feijo", "url": "assets/images/seanna.jpg", "id": "#seannaModal" }
     ];
 
-    constructor() { }
+    constructor(private modalService: ModalService) { }
 
     ngOnInit() {
+
     }
+
+    onClick() {
+        this.modalService.open('ModalDialogComponent');
+    }
+
+
 
 }
