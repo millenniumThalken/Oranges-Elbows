@@ -9,7 +9,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { AgmCoreModule } from '@agm/core';
-import { ModalModule, CommonModalModule } from 'ng-bootstrap-modal';
+
 
 
 
@@ -29,7 +29,7 @@ import { GgmapsComponent } from './ggmaps/ggmaps.component';
 import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
 import { MeetTheCrewComponent } from './meet-the-crew/meet-the-crew.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+
 
 
 
@@ -48,11 +48,9 @@ import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
         GgmapsComponent,
         AreasWeServiceComponent,
         MeetTheCrewComponent,
-        TestimonialsComponent,
-        ModalDialogComponent
-
+        TestimonialsComponent
     ],
-    entryComponents: [ModalDialogComponent],
+
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -62,8 +60,6 @@ import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
         AngularFireDatabaseModule,
         ReactiveFormsModule,
         FormsModule,
-        CommonModalModule,
-        ModalModule.forRoot([{ name: 'popup', component: MeetTheCrewComponent }]),
         MDBBootstrapModule.forRoot(),
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyAw_G4z70opYSIbFHwe1ftzsW8tiybhBCc'
