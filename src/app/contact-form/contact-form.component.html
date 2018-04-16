@@ -1,7 +1,11 @@
 <!--Accessing the FormGroup from the component and connecting the onSubmit() method to the form-->
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-    <p class="h2 text-center mb-4">Contact Us</p>
+    <p id="contact_title" class="h2 text-center mb-4">Contact Us</p>
+
+    <p id="contact_info">Contact us anytime for a free, in-home estimate. Want a preview into what all we can do for you? Check out
+        <a routerLink="/areas-we-service"> our services page</a> for more information and get in touch soon so we can create the cleaning plan that’s just right for you!
+    </p>
 
     <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
