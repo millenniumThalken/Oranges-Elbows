@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 $green: #76FF03;
-$grey: #AAAAAA;
 $orange: #FF9800;
+$grey: #AAAAAA;
+#contact_title {
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+}
+
 a {
     color: #76FF03;
 }
@@ -9,11 +15,14 @@ a:hover {
     color: #FF9800;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 .service-text {
-    font-weight: 700;
     margin-left: 2em;
 }
 
 #top {
-    margin-top: 20px;
+    margin-top: 80px;
 }

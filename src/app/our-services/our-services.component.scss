@@ -27,7 +27,7 @@ h1 {
 .main-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 6em auto auto auto;
+    grid-template-rows: auto auto auto auto;
     font-size: 1.3em;
     margin-left: 5%;
     margin-right: 5%;
@@ -45,10 +45,16 @@ dt {
     margin-top: inherit;
 }
 
+.all-rooms {
+    grid-column: 1;
+    grid-row: 1;
+}
+
 .kitchen_text {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
     margin-left: inherit;
+    margin-top: 3.2em;
 }
 
 .bathroom-title {
@@ -56,6 +62,12 @@ dt {
 }
 
 #green-clean {
+    margin-left: inherit;
+    margin-top: inherit;
+    max-width: 70%;
+}
+
+.green-clean-column {
     grid-column: 2;
     grid-row: 3;
     margin-left: inherit;
