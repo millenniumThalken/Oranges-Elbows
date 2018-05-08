@@ -34,7 +34,7 @@
     <!--The form can only be submitted when the required fields are filled, the showSnackbar() method is triggered
     when the button is successfully pushed-->
     <div class="text-center">
-        <button class="btn btn-unique waves-light" (click)="showSnackbar()" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+        <button class="btn btn-unique waves-light" (click)="showSnackbar('Your Message Was Sent Successfully')" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
     </div>
 
 </form>
