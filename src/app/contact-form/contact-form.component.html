@@ -1,7 +1,11 @@
 <!--Accessing the FormGroup from the component and connecting the onSubmit() method to the form-->
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 
-    <p class="h2 text-center mb-4">Contact Us</p>
+    <p id="contact_title" class="h2 text-center mb-4">Contact Us</p>
+
+    <p id="contact_info">Contact us anytime for a free, in-home estimate. Want a preview into what all we can do for you? Check out
+        <a routerLink="/areas-we-service"> our services page</a> for more information and get in touch soon so we can create the cleaning plan that’s just right for you!
+    </p>
 
     <div class="md-form">
         <i class="fa fa-user prefix grey-text"></i>
@@ -30,7 +34,7 @@
     <!--The form can only be submitted when the required fields are filled, the showSnackbar() method is triggered
     when the button is successfully pushed-->
     <div class="text-center">
-        <button class="btn btn-unique waves-light" (click)="showSnackbar()" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+        <button class="btn btn-unique waves-light" (click)="showSnackbar('Your Message Was Sent Successfully')" type="submit" [disabled]="form.invalid" mdbRippleRadius>Send <i class="fa fa-paper-plane-o ml-1"></i></button>
     </div>
 
 </form>

@@ -6,6 +6,9 @@ form {
     margin-right: 20%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+$green: #76FF03;
+$orange: #FF9800;
 .btn-unique {
     background-color: $orange;
 }
@@ -16,4 +19,20 @@ form {
 
 .btn {
     font-size: 2rem;
+}
+
+#contact_title {
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+}
+
+#contact_info {
+    margin-top: 75px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+a {
+    color: $green;
+    font-weight: 600;
 }

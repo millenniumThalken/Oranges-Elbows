@@ -2,42 +2,59 @@
 $green: #76FF03;
 $grey: #AAAAAA;
 $orange: #FF9800;
-.top-text {
-    margin-left: 5%;
-    margin-top: 12%;
+h1 {
+    font-size: 2rem;
 }
 
-.top-text h1 {
+#contact_title {
     font-family: 'Lobster', cursive;
+    margin-top: 15px;
 }
 
-.top-text p {
-    font-size: 2em;
+.services_info {
+    font-size: 1.3em;
+    margin-bottom: -23px;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.services_info2 {
+    font-size: 1.3em;
+    margin-bottom: -23px;
+    margin-left: 5%;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 6em auto auto auto;
-    font-size: 2em;
+    grid-template-rows: auto auto auto auto;
+    font-size: 1.3em;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
 }
 
-li {
+dt {
     list-style: none;
 }
 
 #kitchen {
     grid-column: 1;
     grid-row: 2;
+    max-width: 85%;
+    margin-top: inherit;
+}
+
+.all-rooms {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .kitchen_text {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
     margin-left: inherit;
+    margin-top: 3.2em;
 }
 
 .bathroom-title {
@@ -45,6 +62,12 @@ li {
 }
 
 #green-clean {
+    margin-left: inherit;
+    margin-top: inherit;
+    max-width: 70%;
+}
+
+.green-clean-column {
     grid-column: 2;
     grid-row: 3;
     margin-left: inherit;
@@ -58,6 +81,7 @@ li {
 
 a {
     color: $green;
+    font-weight: 600;
 }
 
 a:hover {
