@@ -31,3 +31,47 @@ button:hover {
     background-color: $green;
     color: white;
 }
+
+.hamburger {
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    outline: none;
+    background-color: #FFB74D;
+    border: 0;
+}
+
+.hamburger:hover {
+    background-color: #FF9800;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: white;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: white;
+    content: "";
+}
+
+.hamburger span::before {
+    top: -20px;
+}
+
+.hamburger span::after {
+    bottom: -20px;
+}

@@ -2,12 +2,16 @@
     <a routerLink="/homepage"><img class="header-logo" src="./assets/images/oranges_elbows_final.png"></a>
 
     <div class="nav-buttons">
-        <button mat-button routerLink="/homepage">Home</button>
-        <button mat-button routerLink="/our-services">Our Services</button>
-        <button mat-button routerLink="/areas-we-service">Areas We Services</button>
-        <button mat-button routerLink="/testimonials">Testimonials</button>
-        <button mat-button routerLink="/contact">Schedule an Estimate</button>
-        <button mat-button routerLink="/meet-the-crew">Meet the Crew</button>
+        <button class="desktop_button" mat-button routerLink="/homepage">Home</button>
+        <button class="desktop_button" mat-button routerLink="/our-services">Our Services</button>
+        <button class="desktop_button" mat-button routerLink="/areas-we-service">Areas We Services</button>
+        <button class="desktop_button" mat-button routerLink="/testimonials">Testimonials</button>
+        <button class="desktop_button" mat-button routerLink="/contact">Schedule an Estimate</button>
+        <button class="desktop_button" mat-button routerLink="/meet-the-crew">Meet the Crew</button>
+        <button (click)="toggleMenu()" class="hamburger" mat-mini-fab><span></span></button>
+        <app-mobile-nav [@slideInOut]="menuState"></app-mobile-nav>
+
     </div>
+
 
 </div>
