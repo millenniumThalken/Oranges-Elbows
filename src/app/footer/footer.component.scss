@@ -111,3 +111,12 @@ $orange: #FF9800;
         }
     }
 }
+
+@media only screen and (max-width: 415px) {
+    #footer-text {
+        font-size: 1em;
+    }
+    #footer-links {
+        font-size: 1em;
+    }
+}

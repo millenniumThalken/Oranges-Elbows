@@ -1,4 +1,13 @@
 <div class="header-section">
+    <button class="hamburger" mat-button [matMenuTriggerFor]="menu"><i class="fas fa-bars"></i></button>
+    <mat-menu class="mat-menu" #menu="matMenu">
+        <button mat-menu-item><a href="/homepage">Home</a></button>
+        <button mat-menu-item><a href="/our-services">Our Services</a></button>
+        <button mat-menu-item><a href="/areas-we-service">Areas We Services</a></button>
+        <button mat-menu-item><a href="/testimonials">Testimonials</a></button>
+        <button mat-menu-item><a href="/contact">Schedule an Estimate</a></button>
+        <button mat-menu-item><a href="/meet-the-crew">Meet the Crew</a></button>
+    </mat-menu>
     <a routerLink="/homepage"><img class="header-logo" src="./assets/images/oranges_elbows_final.png"></a>
 
     <div class="nav-buttons">
@@ -8,8 +17,6 @@
         <button class="desktop_button" mat-button routerLink="/testimonials">Testimonials</button>
         <button class="desktop_button" mat-button routerLink="/contact">Schedule an Estimate</button>
         <button class="desktop_button" mat-button routerLink="/meet-the-crew">Meet the Crew</button>
-        <button (click)="toggleMenu()" class="hamburger" mat-mini-fab><span></span></button>
-        <app-mobile-nav [@slideInOut]="menuState"></app-mobile-nav>
 
     </div>
 

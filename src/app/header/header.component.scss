@@ -33,45 +33,37 @@ button:hover {
 }
 
 .hamburger {
-    width: 96px;
-    height: 96px;
-    font-size: 0;
-    text-indent: -9999px;
-    cursor: pointer;
-    outline: none;
     background-color: #FFB74D;
-    border: 0;
+    display: none;
 }
 
 .hamburger:hover {
     background-color: #FF9800;
 }
 
-.hamburger span {
-    display: block;
-    position: absolute;
-    top: 44px;
-    left: 18px;
-    right: 18px;
-    height: 8px;
-    background: white;
+.mat-menu-content {
+    background-color: #FFB74D;
 }
 
-.hamburger span::before,
-.hamburger span::after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background-color: white;
-    content: "";
+@media only screen and (max-width: 1258px) {
+    .nav-buttons button.desktop_button {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+        margin-top: 31px;
+        margin-right: 20px;
+    }
+    .fas {
+        margin-bottom: 3px;
+    }
 }
 
-.hamburger span::before {
-    top: -20px;
-}
-
-.hamburger span::after {
-    bottom: -20px;
+@media only screen and (max-width: 415px) {
+    .header-logo {
+        margin: 0px;
+        width: 42%;
+        height: auto;
+    }
 }

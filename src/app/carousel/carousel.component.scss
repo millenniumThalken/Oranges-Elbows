@@ -65,3 +65,53 @@ mdb-slide img {
     font-size: medium;
     cursor: pointer;
 }
+
+#slide_container_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 411px) {
+    #slide_container {
+        display: none;
+    }
+    #slide_container_mobile {
+        display: block;
+    }
+    #slider_background_mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        font: bold Helvetica, Sans-Serif;
+        width: 100%;
+    }
+    mdb-slide img {
+        max-height: 24.5em;
+        object-fit: cover;
+    }
+    .carousel .carousel-control-prev-icon,
+    .carousel .carousel-control-next-icon {
+        width: 0em;
+        height: 0em;
+    }
+    #slider_text {
+        color: white;
+        font: bold Helvetica, Sans-Serif;
+    }
+    #title {
+        margin-bottom: 25px;
+    }
+    #slide_link_m {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        align-self: center;
+    }
+    .btn-outline-success {
+        font-size: medium;
+        cursor: pointer;
+    }
+}

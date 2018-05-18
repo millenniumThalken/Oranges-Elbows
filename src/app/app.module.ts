@@ -20,7 +20,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { SocialMediaHeaderComponent } from './social-media-header/social-media-header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -29,7 +28,7 @@ import { GgmapsComponent } from './ggmaps/ggmaps.component';
 import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
 import { MeetTheCrewComponent } from './meet-the-crew/meet-the-crew.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
+
 
 
 
@@ -42,15 +41,14 @@ import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
         HeaderComponent,
         SocialMediaHeaderComponent,
         FooterComponent,
-        ImageCarouselComponent,
         CarouselComponent,
         OurServicesComponent,
         ContactFormComponent,
         GgmapsComponent,
         AreasWeServiceComponent,
         MeetTheCrewComponent,
-        TestimonialsComponent,
-        MobileNavComponent
+        TestimonialsComponent
+
     ],
 
     imports: [
