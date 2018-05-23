@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
     width: auto;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: 2em auto auto auto
+    grid-template-rows: 2em auto auto auto;
 }
 
 app-social-media-header {
@@ -65,4 +65,32 @@ app-carousel {
 
 app-ggmaps {
     text-align: center;
+}
+
+.mat-menu-content {
+    background-color: #FFB74D;
+}
+
+.mat-menu-content a {
+    color: white;
+}
+
+@media only screen and (max-width: 415px) {
+    app-social-media-header {
+        display: none;
+    }
+    app-footer {
+        max-height: 7em;
+    }
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-content {
+        grid-column: 1/5; // grid-row-start: 3;
+        grid-row: 2/4; //min-height: 50em; setting this to now for the moment to get the layout correct
+    }
+    .w-100 {
+        width: auto !important;
+    }
 }

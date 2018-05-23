@@ -31,3 +31,39 @@ button:hover {
     background-color: $green;
     color: white;
 }
+
+.hamburger {
+    background-color: #FFB74D;
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: #FF9800;
+}
+
+.mat-menu-content {
+    background-color: #FFB74D;
+}
+
+@media only screen and (max-width: 1258px) {
+    .nav-buttons button.desktop_button {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        float: right;
+        margin-top: 31px;
+        margin-right: 20px;
+    }
+    .fas {
+        margin-bottom: 3px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .header-logo {
+        margin: 0px;
+        width: 42%;
+        height: auto;
+    }
+}
