@@ -66,3 +66,22 @@ a {
 a:hover {
     color: $orange;
 }
+
+@media only screen and (max-width: 428px) {
+    .top-text {
+        font-size: 1.3em;
+        text-align: center;
+        margin-top: 0.5em;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    ul {
+        padding: 0px;
+    }
+    blockquote p {
+        font-size: 1rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

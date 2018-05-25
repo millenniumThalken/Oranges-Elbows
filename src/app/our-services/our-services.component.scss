@@ -24,6 +24,10 @@ h1 {
     margin-left: 5%;
 }
 
+.services-mobile {
+    display: none;
+}
+
 .main-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -32,6 +36,10 @@ h1 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
+}
+
+.main-content-mobile {
+    display: none;
 }
 
 dt {
@@ -43,6 +51,10 @@ dt {
     grid-row: 2;
     max-width: 85%;
     margin-top: inherit;
+}
+
+#kitchen-mobile {
+    display: none;
 }
 
 .all-rooms {
@@ -86,4 +98,73 @@ a {
 
 a:hover {
     color: $orange;
+}
+
+@media only screen and (max-width: 428px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    #kitchen {
+        display: none;
+    }
+    #green-clean {
+        display: none;
+    }
+    #contact_title {
+        display: none;
+    }
+    #kitchen-mobile {
+        display: block;
+        max-width: 100%;
+        margin-top: 2px;
+    }
+    .services_info2 {
+        display: none;
+    }
+    .services-mobile {
+        display: block;
+        font-size: 1.1em;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .services_info {
+        font-size: 1.1em;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+    .main-content {
+        display: none;
+    }
+    .main-content-mobile {
+        display: block;
+    }
+    .main-content-mobile h1 {
+        margin-left: 3%;
+    }
+    .main-content-mobile p {
+        font-size: 1.1em;
+    }
+    .what-to-expect {
+        margin-top: 5%;
+    }
+    .what-to-expect p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    mat-panel-title {
+        font-weight: 700;
+    }
+    .wont-do {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .wont-do h3 {
+        margin-left: 3%;
+    }
+    .bottom-text {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }
