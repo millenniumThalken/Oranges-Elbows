@@ -36,3 +36,16 @@ a {
     color: $green;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 428px) {
+    #contact_info {
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        font-size: 1.1em;
+    }
+    form {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
