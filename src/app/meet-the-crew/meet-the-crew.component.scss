@@ -34,8 +34,12 @@ body {
     justify-content: center;
 }
 
-img {
+.group-photo {
     border-radius: 10px;
+}
+
+.group-photo-mobile {
+    display: none;
 }
 
 .cards {
@@ -72,5 +76,23 @@ article.cards-article {
 article.cards-article:hover {
     .article-title {
         height: 100px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .group-photo {
+        display: none;
+    }
+    .group-photo-mobile {
+        display: block;
+        margin-bottom: 5%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .leading {
+        display: none;
+    }
+    .cards {
+        width: 85%;
     }
 }
