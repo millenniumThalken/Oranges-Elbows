@@ -15,7 +15,7 @@ export class MeetTheCrewComponent implements OnInit {
 
     public crew: Crew[] = [
         { "name": "Megan Willard", "url": "assets/images/megan.jpg", "id": "#meganModal" },
-        { "name": "Catherine Shrock", "url": "assets/images/cat.jpg", "id": "#catModal" },
+        { "name": "Catherine Minor-Nidey", "url": "assets/images/cat.jpg", "id": "#catModal" },
         { "name": "Margaret Koenig", "url": "assets/images/margaret.jpg", "id": "#margaretModal" },
         { "name": "Wanda Fennern", "url": "assets/images/wonda.jpg", "id": "#wandaModal" },
         { "name": "Jeri Halperin", "url": "assets/images/jerry.jpg", "id": "#jeriModal" },

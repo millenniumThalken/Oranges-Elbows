@@ -16,7 +16,7 @@ export class CarouselComponent implements OnInit {
         { "title": "Proud to be Green ", "message": "Committed to your health and the environment, check out our testimonials", "link": "/testimonials", "url": "/assets/images/kitchen_one.jpg", "selected": false },
         { "title": "Contact Us", "message": "Free customized estimates, so contact us today!", "link": "/contact", "url": "/assets/images/kitchen_two.jpg", "selected": false },
         { "title": "Service with a Smile", "message": "Our crew is the best in the business", "link": "/meet-the-crew", "url": "/assets/images/VinegarAndLemons.jpg", "selected": false },
-        { "title": "Handmade Products", "message": "utilizing safe quality ingredients", "link": "/#", "url": "/assets/images/YellowGlove.jpg", "selected": false }
+        { "title": "Handmade Products", "message": "utilizing safe quality ingredients", "link": "/our-services", "url": "/assets/images/YellowGlove.jpg", "selected": false }
     ];
 
     ngOnInit() {

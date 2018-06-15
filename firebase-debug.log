@@ -1,0 +1,81 @@
+[debug] [2018-06-01T20:34:45.180Z] ----------------------------------------------------------------------
+[debug] [2018-06-01T20:34:45.182Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pthalken\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only functions
+[debug] [2018-06-01T20:34:45.182Z] CLI Version:   3.18.5
+[debug] [2018-06-01T20:34:45.182Z] Platform:      win32
+[debug] [2018-06-01T20:34:45.182Z] Node Version:  v8.4.0
+[debug] [2018-06-01T20:34:45.182Z] Time:          Fri Jun 01 2018 15:34:45 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-01T20:34:45.182Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-01T20:34:45.193Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-01T20:34:45.193Z] > authorizing via signed-in user
+[debug] [2018-06-01T20:34:45.195Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contact-form-oranges  
+  
+ Fri Jun 01 2018 15:34:45 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-01T20:34:45.697Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-01T20:34:45.698Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contact-form-oranges/tokens  
+  
+ Fri Jun 01 2018 15:34:45 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-01T20:34:46.201Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T17:59:53.233Z] ----------------------------------------------------------------------
+[debug] [2018-06-03T17:59:53.235Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pthalken\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only functions
+[debug] [2018-06-03T17:59:53.235Z] CLI Version:   3.18.5
+[debug] [2018-06-03T17:59:53.235Z] Platform:      win32
+[debug] [2018-06-03T17:59:53.235Z] Node Version:  v8.4.0
+[debug] [2018-06-03T17:59:53.235Z] Time:          Sun Jun 03 2018 12:59:53 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T17:59:53.235Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-03T17:59:53.248Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-03T17:59:53.248Z] > authorizing via signed-in user
+[debug] [2018-06-03T17:59:53.250Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-06-03T17:59:53.250Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/Smxz5MyFtrJVcJNt11A0IzZQFyXe43OTjbNWqbbTrUc',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jun 03 2018 12:59:53 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T17:59:53.403Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T17:59:53.506Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contact-form-oranges  
+  
+ Sun Jun 03 2018 12:59:53 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T17:59:53.884Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T17:59:53.884Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contact-form-oranges/tokens  
+  
+ Sun Jun 03 2018 12:59:53 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T17:59:54.186Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T18:00:50.262Z] ----------------------------------------------------------------------
+[debug] [2018-06-03T18:00:50.264Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pthalken\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy --only functions
+[debug] [2018-06-03T18:00:50.264Z] CLI Version:   3.18.5
+[debug] [2018-06-03T18:00:50.264Z] Platform:      win32
+[debug] [2018-06-03T18:00:50.264Z] Node Version:  v8.4.0
+[debug] [2018-06-03T18:00:50.265Z] Time:          Sun Jun 03 2018 13:00:50 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:00:50.265Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-03T18:00:50.274Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-03T18:00:50.274Z] > authorizing via signed-in user
+[debug] [2018-06-03T18:00:50.277Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contact-form-oranges  
+  
+ Sun Jun 03 2018 13:00:50 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:00:50.558Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T18:00:50.558Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contact-form-oranges/tokens  
+  
+ Sun Jun 03 2018 13:00:50 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:00:50.836Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T18:40:17.459Z] ----------------------------------------------------------------------
+[debug] [2018-06-03T18:40:17.462Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\pthalken\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-03T18:40:17.462Z] CLI Version:   3.18.5
+[debug] [2018-06-03T18:40:17.462Z] Platform:      win32
+[debug] [2018-06-03T18:40:17.462Z] Node Version:  v8.4.0
+[debug] [2018-06-03T18:40:17.462Z] Time:          Sun Jun 03 2018 13:40:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:40:17.462Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-03T18:40:17.472Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-03T18:40:17.472Z] > authorizing via signed-in user
+[debug] [2018-06-03T18:40:17.474Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/contact-form-oranges  
+  
+ Sun Jun 03 2018 13:40:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:40:17.860Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-03T18:40:17.861Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/contact-form-oranges/tokens  
+  
+ Sun Jun 03 2018 13:40:17 GMT-0500 (Central Daylight Time)
+[debug] [2018-06-03T18:40:18.214Z] <<< HTTP RESPONSE 200
