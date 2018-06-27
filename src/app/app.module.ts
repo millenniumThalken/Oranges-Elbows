@@ -28,6 +28,7 @@ import { GgmapsComponent } from './ggmaps/ggmaps.component';
 import { AreasWeServiceComponent } from './areas-we-service/areas-we-service.component';
 import { MeetTheCrewComponent } from './meet-the-crew/meet-the-crew.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 
@@ -47,7 +48,8 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
         GgmapsComponent,
         AreasWeServiceComponent,
         MeetTheCrewComponent,
-        TestimonialsComponent
+        TestimonialsComponent,
+        ModalComponent
 
     ],
 
