@@ -5,6 +5,7 @@ import { Crew } from './crew.model';
 
 
 
+
 @Component({
     selector: 'app-meet-the-crew',
     templateUrl: './meet-the-crew.component.html',
